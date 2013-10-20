@@ -5,7 +5,7 @@ export SVN_EDITOR="vim"
 export GIT_EDITOR="vim"
 
 #set path
-export PATH=/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/mysql/bin:/Users/chris/Project/depot_tools:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:$PATH
 
 #enables color in the terminal bash shell
 export CLICOLOR=1
@@ -14,9 +14,6 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 #sets up the prompt color (currently a green similar to linux terminal)
-#\e[ - Indicates the beginning of color prompt
-#\e[m - indicates the end of color prompt
-#usr@host:pwd\$
 export PS1='\e[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$'
 
 #enables color for iTerm

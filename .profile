@@ -24,8 +24,20 @@ alias ls='ls -G'
 alias ll='ls -hl'
 alias l='ls -hla'
 
-# System-wide .profile for sh(1)
-export JAVA_HOME="/Library/Java/Home"
+#last JDK 6 by Apple
+export JAVA_6_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+#latest JDK 7 by Oracle
+export JAVA_7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
+#latest preview JDK 8 by Oracle
+export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0.jdk/Contents/Home
+ 
+#default JDK is  7
+export JAVA_HOME=$JAVA_7_HOME
+
+#Make aliases to switch from one to another
+alias java6='export JAVA_HOME=$JAVA_6_HOME'
+alias java7='export JAVA_HOME=$JAVA_7_HOME'
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
 
 if [ "${BASH-no}" != "no" ];
 

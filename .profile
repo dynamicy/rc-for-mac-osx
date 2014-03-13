@@ -14,7 +14,7 @@ export CLICOLOR=1
 export LSCOLORS=gxfxcxdxbxegedabagacad
 
 #sets up the prompt color (currently a green similar to linux terminal)
-export PS1='\e[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;36m\]\w\[\033[00m\]\$'
+export PS1="\e[0;34m\]\u\[\e[m\]@\[\e[0;32m\]\h\[\e[m\] \[\e[0;36m\]\W\[\e[m\] $"
 
 #enables color for iTerm
 export TERM=xterm-color

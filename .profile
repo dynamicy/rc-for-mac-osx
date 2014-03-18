@@ -5,7 +5,7 @@ export SVN_EDITOR="vim"
 export GIT_EDITOR="vim"
 
 #set path
-export PATH=/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:$PATH
+export PATH=/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/sbin:$PATH
 
 #enables color in the terminal bash shell
 export CLICOLOR=1

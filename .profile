@@ -23,6 +23,7 @@ export TERM=xterm-color
 alias ls='ls -G'
 alias ll='ls -hl'
 alias l='ls -hla'
+alias lw='ls | wc -l'
 
 #last JDK 6 by Apple
 export JAVA_6_HOME=/System/Library/Frameworks/JavaVM.framework/Home

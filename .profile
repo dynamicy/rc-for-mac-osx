@@ -21,8 +21,8 @@ export TERM=xterm-color
 
 #sets up proper alias commands when called
 alias ls='ls -G'
-alias ll='ls -hl'
-alias l='ls -hla'
+alias l='ls -hl'
+alias la='ls -hla'
 alias lw='ls | wc -l'
 alias df='df -h'
 

@@ -5,7 +5,7 @@ export SVN_EDITOR="vim"
 export GIT_EDITOR="vim"
 
 #set path
-export PATH=/Users/chris/.rvm/scripts/rvm:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/sbin:$PATH
+export PATH=~/.rvm/scripts/rvm:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/sbin:$PATH
 
 #enables color in the terminal bash shell
 export CLICOLOR=1
@@ -25,6 +25,9 @@ alias l='ls -hl'
 alias la='ls -hla'
 alias lw='ls | wc -l'
 alias df='df -h'
+
+# Set python version 2 or 3
+alias python=python2
 
 #last JDK 6 by Apple
 export JAVA_6_HOME=/System/Library/Frameworks/JavaVM.framework/Home

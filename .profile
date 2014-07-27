@@ -52,3 +52,4 @@ if [ "${BASH-no}" != "no" ];
 	then [ -r /etc/bashrc ] && . /etc/bashrc
 
 fi
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

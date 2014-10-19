@@ -1,3 +1,4 @@
+
 #set svn default editor
 export SVN_EDITOR="vim"
 
@@ -32,9 +33,9 @@ alias python=python2
 #last JDK 6 by Apple
 export JAVA_6_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 #latest JDK 7 by Oracle
-export JAVA_7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_45.jdk/Contents/Home
+export JAVA_7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
 #latest preview JDK 8 by Oracle
-export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home
+export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
  
 #default JDK is 8
 export JAVA_HOME=$JAVA_8_HOME
@@ -52,4 +53,5 @@ if [ "${BASH-no}" != "no" ];
 	then [ -r /etc/bashrc ] && . /etc/bashrc
 
 fi
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

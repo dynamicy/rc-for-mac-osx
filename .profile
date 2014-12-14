@@ -37,8 +37,8 @@ export JAVA_7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Ho
 #latest preview JDK 8 by Oracle
 export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
  
-#default JDK is 8
-export JAVA_HOME=$JAVA_8_HOME
+#default JDK is 7
+export JAVA_HOME=$JAVA_7_HOME
 
 #Android Home path
 export ANDROID_HOME=/usr/local/opt/android-sdk

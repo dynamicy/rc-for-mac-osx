@@ -1,6 +1,8 @@
 syntax on
 behave xterm
 
+execute pathogen#infect()
+
 set number
 set nocompatible
 set selectmode=mouse

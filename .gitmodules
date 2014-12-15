@@ -10,3 +10,6 @@
 [submodule ".vim/bundle/vim-javascript"]
 	path = .vim/bundle/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".vim/bundle/xoria256.vim"]
+	path = .vim/bundle/xoria256.vim
+	url = https://github.com/vim-scripts/xoria256.vim.git

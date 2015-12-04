@@ -40,12 +40,9 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 PS1="$CYAN\$(date +%H:%M) $YELLOW[$BLUE\u@\h:$RED\w$YELLOW]$NC\n$YELLOW\$(parse_git_branch)$NC% " 
 
 # Bash completion
-BASH_COMPLETION_COMPAT_DIR=/opt/bash_completion.d
-for i in $(LC_ALL=C command ls "$BASH_COMPLETION_COMPAT_DIR"); do
-    i=$BASH_COMPLETION_COMPAT_DIR/$i
-    # [[ ${i##*/} != @(Makefile*|.*) && -f $i && -r $i ]] && . "$i"
-    [[ -f $i && -r $i ]] && . "$i"
-done
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
 
 #enables color for iTerm
 export TERM=xterm-color
@@ -66,7 +63,7 @@ export JAVA_6_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 export JAVA_7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
 #latest preview JDK 8 by Oracle
 export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home
- 
+
 #default JDK is 7
 export JAVA_HOME=$JAVA_7_HOME
 
@@ -79,7 +76,7 @@ alias java7='export JAVA_HOME=$JAVA_7_HOME'
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
 
 if [ "${BASH-no}" != "no" ];
-	then [ -r /etc/bashrc ] && . /etc/bashrc
+    then [ -r /etc/bashrc ] && . /etc/bashrc
 fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
